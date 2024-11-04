@@ -1,0 +1,57 @@
+body {
+    background-color: gainsboro;
+    /* Use a system font, if none are available use an available sans-sarif */
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    align-items: center;
+
+  }
+  
+  .sqr {
+    width: 30%;
+    aspect-ratio: 1/1;
+    border: 3px solid black;
+    font-size: 64px;
+    text-align: center;
+    cursor: pointer;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+  }
+  
+  /* Hover effect for squares */
+.sqr:hover {
+  background-color: #d1d1d1;
+  transform: scale(1.05);
+}
+
+h1 { 
+ text-align: center; 
+}
+
+h2 {
+text-align: center;
+}
+
+
+#reset:hover {
+  background-color: #555;
+}
+
+#reset:active {
+  background-color: #222;
+}
